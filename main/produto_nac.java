@@ -9,4 +9,9 @@ public class produto_nac {
 		this.nome = nome;
 		this.preco = preco;
 	}
+	
+	public void display(){  
+	 System.out.print("Nome do produto = "+ nome + "  " + " Preco do produto = "+ preco);  
+	 System.out.println();  
+	}  
 }

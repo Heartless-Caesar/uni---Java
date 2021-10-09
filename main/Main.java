@@ -24,48 +24,56 @@ public class Main {
     do{
     	System.out.println("Insira o nome do produto e seu preco, respectivamente:");
     	Scanner scanNome = new Scanner(System.in);
-    	String nome = scanNome.next();
-    	double preco = scanNome.nextDouble();
-    	array[i] = new produto_nac(nome,preco);
+    	String nome1 = scanNome.next();
+    	double preco1 = scanNome.nextDouble();
+    	array[i] = new produto_nac(nome1,preco1);
         i++;
     }while( i < num1);	
 	
     //OUTPUT 1
     //LOOP PRINT
+    i = 0;
     do{
     	System.out.println("Item " + i);
-    	System.out.println(array[i].nome);
-    	System.out.println(array[i].preco);
+    	array[i].display();
     	System.out.println("-----------------------------------------");
     	i++;
     }while( i < num1);
     
     
-    
+    /*
 	//PRODUTO IMPORTADO
     System.out.println("Insira a quantidade de produtos importados");
 	Scanner input2 = new Scanner(System.in);
 	int num2 = input1.nextInt();
-	produto_imp[] array2 = new produto_imp[num2];	
+	int j = 0;
+	produto_imp[] array2 = new produto_imp[num2];
+	
 	//INPUT LOOP
-    do{
+	while( j < num2){
     	System.out.println("Insira o nome do produto e seu preco, respectivamente:");
     	Scanner scanNome = new Scanner(System.in);
-    	String nome = scanNome.next();
-    	double preco = scanNome.nextDouble();
-    	array2[i] = new produto_imp(nome,preco);
-        i++;
-    }while( i < num2);
-    
-    do{
-    	System.out.println("Item " + i);
-    	System.out.println(array2[i].nome);
-    	System.out.println(array2[i].preco);
+    	String nome2 = scanNome.next();
+    	double preco2 = scanNome.nextDouble();
+    	array2[j] = new produto_imp(nome2,preco2);
+        j++;
+    };
+    j = 0;
+    do {
+    	System.out.println("Item " + j);
+        array2[j].display();
     	System.out.println("-----------------------------------------");
-    	i++;
-    }while( i < num1);
+    	j++;
+    }while( j < num2);
 	
-	
+	*/
 	}
-    
+ 
+	static void print_prod_nac() {
+		
+	}
+	
+	static void print_prod_imp() {
+		
+	}
 }
