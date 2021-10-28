@@ -59,15 +59,4 @@ public class Main{
             }
             break;  
         }
-
-
-        //PRINT INFORMACOES
-        static void printElements (pessoaFisica[] numFis, pessoaJuridica[] numJur, int arrSize, int arrSize2){
-         
-        }
-    }
-
-    static void operacaoFisica(int size){
-
-    }
 }
